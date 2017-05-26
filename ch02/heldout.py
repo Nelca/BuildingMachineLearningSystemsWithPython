@@ -5,7 +5,6 @@
 #
 # It is made available under the MIT License
 
-from matplotlib import pyplot as plt
 import numpy as np
 from sklearn.datasets import load_iris
 from threshold import learn_model, apply_model, accuracy

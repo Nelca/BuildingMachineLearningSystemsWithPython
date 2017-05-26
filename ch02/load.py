@@ -6,7 +6,7 @@
 # It is made available under the MIT License
 
 import numpy as np
-
+import pdb
 
 def load_dataset(dataset_name):
     '''
@@ -21,7 +21,9 @@ def load_dataset(dataset_name):
     '''
     data = []
     labels = []
-    with open('../data/{0}.tsv'.format(dataset_name)) as ifile:
+    file_path = '../data/{0}.tsv'.format(dataset_name)
+    with open(file_path) as ifile:
+        pdb.set_trace()
         for line in ifile:
             tokens = line.strip().split('\t')
             data.append([float(tk) for tk in tokens[:-1]])
