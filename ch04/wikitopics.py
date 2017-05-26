@@ -39,11 +39,10 @@ for doc_top in topics:
 
 words = model.show_topic(counts.argmax(), 64)
 print(words)
-print()
-print()
-print()
+print("")
+print("")
 words = model.show_topic(counts.argmin(), 64)
 print(words)
-print()
-print()
-print()
+print("")
+print("")
+

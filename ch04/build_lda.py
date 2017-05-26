@@ -67,8 +67,7 @@ large = distances.max() + 1
 for i in xrange(len(distances)):
     distances[i, i] = large
 
-print otexts[1]
-print
-print
-print
-print otexts[distances[1].argmin()]
+print(otexts[1])
+print("")
+print("")
+print(otexts[distances[1].argmin()])
